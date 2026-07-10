@@ -1,18 +1,21 @@
 /* styles/base.css */
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   margin: 0;
   background-color: #f4f6f9;
   line-height: 1.65;
 }
 
 /* Header */
-.course-header {
+header {
   background-color: #1e2a5e;
   color: white;
   text-align: center;
-  padding: 18px 0;
+  padding: 18px;
+}
+
+.course-header {
   font-size: 1.35rem;
   font-weight: bold;
 }
@@ -41,6 +44,16 @@ body {
   text-decoration: underline;
 }
 
+/* Main */
+main {
+  display: flex;              /* Flexbox requirement */
+  flex-direction: column;     /* stack children vertically */
+  gap: 25px;
+  max-width: 1250px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
 /* Main Content */
 h1 {
   text-align: center;
@@ -53,7 +66,7 @@ h1 {
   display: flex;
   gap: 25px;
   max-width: 1250px;
-  margin: 30px auto;
+  margin: 0 auto;
   padding: 0 20px;
 }
 
@@ -150,11 +163,11 @@ h1 {
 }
 
 .location-text p {
- flex: 1;
   margin: 0;
   text-align: justify;
   word-wrap: break-word;
 }
+
 /* Resources */
 .resources {
   flex: 1;
@@ -169,12 +182,15 @@ h1 {
 }
 
 .resources ul {
+  display: grid;  
+  grid-template-columns: 1fr;
+  gap: 12px;
   padding: 22px 25px;
   list-style: none;
 }
 
 .resources ul li {
-  margin: 13px 0;
+  margin: 0;
 }
 
 .resources ul li a {
@@ -201,6 +217,9 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 900px) {
+  main {
+    flex-direction: column;
+  }
   .main-content {
     flex-direction: column;
   }
