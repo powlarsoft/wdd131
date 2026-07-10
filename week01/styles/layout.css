@@ -1,0 +1,55 @@
+/* Apply Grid to the body */
+body {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-columns: 1fr;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header and Footer */
+header, footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navigation with Flexbox */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Main Content Area */
+main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.main-content {
+  background-color: #ddd;
+  padding: 20px;
+}
+
+aside {
+  background-color: #fff;
+  padding: 20px;
+  border-left: 1px solid #ccc;
+}

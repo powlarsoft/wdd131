@@ -1,11 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 – Dynamic Web Fundamentals – Powell Nana</title>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. Powell Nana. Personal course landing page with resources and project links.">
+  <meta name="author" content="Powell Nana">
+  <link rel="stylesheet" href="styles/base.css">
+  <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>Welcome to WDD 131</h1>
+  <!-- Course Header -->
+  <header class="course-header">
+    <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        <li><a href="https://byupw.instructure.com/">I-Learn</a></li>
+        <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a></li>
+        <li><a href="#">Final Project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Powell Nana</h1>
+
+    <div class="main-content">
+      <!-- About Me - Wider Card -->
+      <section class="card about-me">
+        <h2>About Me</h2>
+        <div class="about-container">
+          <div class="about-text">
+            <p>
+              My name is Powell Nana, and I am from Nigeria. I currently live in Port Harcourt, Rivers State. 
+              I am the founder and CEO of PowLarSOFT Technology, where I develop websites and provide IT solutions.
+            </p>
+            <p>
+              I am studying Software Development through BYU Pathway Worldwide. I have a strong passion for technology, 
+              programming, web development, robotics, artificial intelligence, and data science.
+            </p>
+          </div>
+          <div class="about-image">
+            <img src="images/profile.jpg" alt="Powell Nana profile photo">
+          </div>
+        </div>
+
+        <h3>Port Harcourt, Nigeria</h3>
+        <hr class="location-line">
+        
+        <div class="location">
+          <div class="flag">
+            <img src="images/nigeria.jpg" alt="Official Flag of Nigeria">
+            <p><em>Official Flag of Nigeria</em></p>
+          </div>
+          <div class="location-text">
+            <p>
+              Nigeria is a country located in West Africa. It is the most populous country in Africa and is known for its rich cultural heritage, 
+              diverse ethnic groups, vibrant music, and significant contributions to the global oil industry.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Resources - Narrower Card -->
+      <section class="card resources">
+        <h2>Web Dev Resources</h2>
+        <ul>
+          <li><a href="https://dev.to">Dev.to Community</a></li>
+          <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+          <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+          <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+          <li><a href="https://www.udemy.com/">Udemy</a></li>
+          <li><a href="https://picsum.photos/">Lorem Picsum Image Placeholder</a></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>©<span id="currentyear"></span> <span class="pink">★</span> Powell Nana <span class="pink">★</span> Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
 </body>
 </html>
