@@ -7,6 +7,7 @@ body {
   line-height: 1.65;
 }
 
+/* Header */
 .course-header {
   background-color: #1e2a5e;
   color: white;
@@ -63,9 +64,9 @@ h1 {
   overflow: hidden;
 }
 
-/* About Me - Wider Card */
+/* About Me */
 .about-me {
-  flex: 2.1;
+  flex: 2;
   text-align: center;
 }
 
@@ -81,12 +82,12 @@ h1 {
 /* About Container */
 .about-container {
   display: flex;
-  gap: 30px;
+  gap: 25px;
   padding: 22px 20px 10px;
 }
 
 .about-text {
-  flex: 1;
+  flex: 2;
   padding-right: 10px;
 }
 
@@ -96,7 +97,7 @@ h1 {
 }
 
 .about-image {
-  flex: 0 0 235px;
+  flex: 0 0 180px;
   margin-top: 5px;
 }
 
@@ -108,18 +109,14 @@ h1 {
 
 /* Location Title */
 .about-me h3 {
-  margin: 8px 20px 6px 20px;
+  margin: 8px auto 12px auto;
   color: #1e2a5e;
   font-size: 1.28rem;
   font-weight: normal;
-}
-
-/* Short underline line */
-.location-line {
-  margin: 0 20px 18px 20px;
-  border: none;
-  border-top: 1px solid #d0d0d0;
-  width: 550px;
+  border-bottom: 2px solid #d0d0d0;
+  display: inline-block;
+  padding: 0 25px 4px 25px;   /* extend underline beyond text */
+  text-align: center;
 }
 
 /* Location Section */
@@ -127,6 +124,7 @@ h1 {
   display: flex;
   gap: 22px;
   padding: 0 20px 28px;
+  align-items: flex-start;
 }
 
 .flag {
@@ -146,12 +144,18 @@ h1 {
   color: #444;
 }
 
-.location-text p {
-  margin: 0;
-  text-align: justify;
+.location-text {
+  flex: 1;
+  max-width: 100%;         
 }
 
-/* Resources - Narrower Card */
+.location-text p {
+ flex: 1;
+  margin: 0;
+  text-align: justify;
+  word-wrap: break-word;
+}
+/* Resources */
 .resources {
   flex: 1;
 }
@@ -209,11 +213,11 @@ footer {
   }
   
   .about-image {
-    max-width: 280px;
+    max-width: 220px;
     margin: 0 auto;
   }
   
-  .location-line {
-    width: 220px;
+  .about-me h3 {
+    border-bottom: none; /* cleaner on mobile */
   }
 }
