@@ -8,7 +8,6 @@ header {
   text-align: center;
   background-color: #4B0082;
   color: white;
-  text-align: center;
   padding: 1rem;
 }
 
@@ -16,7 +15,7 @@ nav a {
   margin: 0 0.5rem;
   text-decoration: none;
   color: white;
-   transition: color 0.3s ease, text-decoration 0.3s ease;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 nav a:hover {
@@ -42,7 +41,8 @@ figure {
 
 figure img {
   width: 100%;
-  height: 250px;    
+  height: auto;           
+  max-height: 250px;
   object-fit: cover;  
   border-radius: 8px;
 }
