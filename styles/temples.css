@@ -1,0 +1,55 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  background-color: #4B0082; /* purple/blue tone */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+nav a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+main h1 {
+  text-align: center;
+}
+
+.album {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+figure {
+  margin: 0;
+  text-align: center;
+}
+
+figure img {
+  width: 100%;
+  height: 250px;       /* normalize height */
+  object-fit: cover;   /* ensures same width/height */
+  border-radius: 8px;
+}
+
+figcaption {
+  font-family: 'Merriweather', serif;
+  color: purple;
+  margin-top: 0.5rem;
+}
+
+footer {
+  background-color: #4B0082; /* match header color */
+  color: white;
+  text-align: center;   /* centralized footer */
+  padding: 1rem;
+}

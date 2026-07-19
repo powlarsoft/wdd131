@@ -1,0 +1,27 @@
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between; /* h1 left, nav right */
+    align-items: center;
+    text-align: left; /* override center from mobile */
+    padding: 1rem 2rem;
+  }
+
+  header h1 {
+    margin: 0;
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  nav a {
+    margin: 0 0.75rem;
+    font-weight: bold;
+  }
+
+  .album {
+    grid-template-columns: repeat(3, 1fr); /* 3 per row on larger view */
+  }
+}
