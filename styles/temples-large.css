@@ -1,9 +1,9 @@
 @media (min-width: 768px) {
   header {
     display: flex;
-    justify-content: space-between; /* h1 left, nav right */
+    justify-content: space-between;
     align-items: center;
-    text-align: left; /* override center from mobile */
+    text-align: left; 
     padding: 1rem 2rem;
   }
 
@@ -22,6 +22,6 @@
   }
 
   .album {
-    grid-template-columns: repeat(3, 1fr); /* 3 per row on larger view */
+    grid-template-columns: repeat(3, 1fr);
   }
 }
