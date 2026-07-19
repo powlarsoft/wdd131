@@ -16,6 +16,12 @@ nav a {
   margin: 0 0.5rem;
   text-decoration: none;
   color: white;
+   transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+nav a:hover {
+  color: #FFD700;
+  text-decoration: underline; 
 }
 
 main h1 {
