@@ -1,0 +1,110 @@
+/* Root variables for easy theming */
+:root {
+  --banner-color: green; /* Change to red if you want exact Madagascar look */
+  --overlay-bg: rgba(0,0,0,0.5);
+  --text-color: #fff;
+  --footer-bg: #222;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay container */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--text-color);
+}
+
+/* Banner title */
+.banner {
+  text-align: center;
+  background: var(--banner-color);
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  margin: 1rem auto;
+  font-size: 2.5rem;
+  color: var(--text-color);
+  border-radius: 6px;
+}
+
+/* Data block bottom-left (first) */
+.data.bottom-left {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  background: var(--overlay-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 250px;
+}
+
+/* Weather block top-right (second) */
+.weather.top-right {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background: var(--overlay-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 250px;
+}
+
+.weather img {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--footer-bg);
+  color: var(--text-color);
+}
+
+/* 📱 Mobile view */
+@media (max-width: 768px) {
+  .banner {
+    font-size: 2rem;
+  }
+
+  .data.bottom-left,
+  .weather.top-right {
+    position: static;
+    margin: 1rem auto;
+    width: 90%;
+    max-width: none;
+  }
+
+  .overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Ensure Data comes first, then Weather */
+  .data.bottom-left {
+    order: 1;
+  }
+
+  .weather.top-right {
+    order: 2;
+  }
+}
