@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nigeria</title>
+  <meta name="description" content="Explore key facts about Nigeria including area, population, capital, languages, currency, and current weather conditions.">
+  <meta name="author" content="Powell Nana">
   <link rel="stylesheet" href="styles/place.css">
   <script src="scripts/place.js" defer></script>
 </head>
@@ -32,15 +34,21 @@
       </ul>
     </section>
 
-    <section class="weather-card">
-      <h2>Weather</h2>
-      <ul>
-        <li><span>Temperature:</span> 10 °C</li>
-        <li><span>Conditions:</span> Partly Cloudy</li>
-        <li><span>Wind:</span> 5 km/h</li>
-        <li><span>Wind Chill:</span> <span id="windchill">9.8 °C</span></li>
-      </ul>
-    </section>
+  <section class="weather-card">
+  <h2>
+    Weather
+    <!-- SVG icon for mobile -->
+    <svg class="weather-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="white">
+      <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/>
+    </svg>
+  </h2>
+  <ul>
+    <li><span>Temperature:</span> 10 °C</li>
+    <li><span>Conditions:</span> Partly Cloudy</li>
+    <li><span>Wind:</span> 5 km/h</li>
+    <li><span>Wind Chill:</span> <span id="windchill">9.8 °C</span></li>
+  </ul>
+</section>
   </main>
 
   <footer>
