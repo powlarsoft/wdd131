@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-  --primary: #008751;      /* Nigeria green */
+  --primary: #008751;
   --primary-dark: #006b41;
   --accent: #ffffff;
   --text-dark: #222;
@@ -10,7 +10,7 @@
   --font-main: "Segoe UI", system-ui, sans-serif;
 }
 
-/* == Base Styles == */
+/* Base */
 * {
   margin: 0;
   padding: 0;
@@ -39,7 +39,6 @@ header h1 {
   letter-spacing: 1px;
 }
 
-/* Green accent bar under header */
 header::after {
   content: "";
   display: block;
@@ -65,6 +64,7 @@ main img {
   height: 100%;
   object-fit: cover;
   display: block;
+  min-height: 500px; 
 }
 
 /* Cards */
@@ -88,12 +88,22 @@ main img {
   font-size: 1.4rem;
   border-radius: 6px 6px 0 0;
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
 }
 
-/* Weather icon via pseudo-element*/
+/* Weather Icon Control */
+.weather-icon {
+  display: inline-block;   /* visible on mobile */
+  vertical-align: middle;
+  margin-left: 8px;
+  width: 28px;
+  height: 28px;
+}
+
+/* Hide emoticon on mobile */
 .weather-card h2::after {
-  content: " ⛅";
-  font-size: 1.3rem;
+  content: none;
 }
 
 .data-card ul,
@@ -126,18 +136,18 @@ footer p {
   margin: 0.25rem 0;
 }
 
-/* Mobile First (default)*/
+/* Mobile First */
 .data-card {
-  top: 12%;
+  top: 8%;
   left: 5%;
 }
 
 .weather-card {
-  top: 55%;
+  top: 52%;
   right: 5%;
 }
 
-/* Wider screens*/
+/* Desktop */
 @media (min-width: 700px) {
   header h1 {
     font-size: 3.4rem;
@@ -153,6 +163,18 @@ footer p {
     top: 40%;
     right: 6%;
     width: 280px;
+  }
+
+  /* Hide SVG on desktop */
+  .weather-icon {
+    display: none;
+  }
+
+  /* emoticon only on desktop */
+  .weather-card h2::after {
+    content: " ⛅";
+    font-size: 1.3rem;
+    margin-left: 6px;
   }
 }
 
