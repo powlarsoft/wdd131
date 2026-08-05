@@ -5,7 +5,7 @@
   --accent: #ffffff;
   --text-dark: #222;
   --text-light: #fff;
-  --card-bg: rgba(255, 255, 255, 0.92);
+  --card-bg: rgba(255, 255, 255, 0.95);
   --shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
   --font-main: "Segoe UI", system-ui, sans-serif;
 }
@@ -29,14 +29,13 @@ header {
   background-color: var(--primary);
   color: var(--text-light);
   text-align: center;
-  padding: 1.8rem 1rem;
+  padding: 1.5rem 1rem;
   position: relative;
 }
 
 header h1 {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   font-weight: 700;
-  letter-spacing: 1px;
 }
 
 header::after {
@@ -55,28 +54,26 @@ main {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
-  min-height: 70vh;
 }
 
 main picture,
 main img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
   display: block;
-  min-height: 500px; 
+  min-height: 450px;
+  object-fit: cover;
 }
 
 /* Cards */
 .data-card,
 .weather-card {
   background: var(--card-bg);
-  border-radius: 6px;
+  border-radius: 8px;
   box-shadow: var(--shadow);
-  padding: 0 0 1.2rem;
-  width: 90%;
-  max-width: 320px;
-  position: absolute;
+  width: 92%;
+  max-width: 340px;
+  margin: 1rem auto;
+  position: relative; 
   z-index: 10;
 }
 
@@ -84,24 +81,23 @@ main img {
 .weather-card h2 {
   background-color: var(--primary);
   color: var(--text-light);
-  padding: 0.6rem 1rem;
-  font-size: 1.4rem;
-  border-radius: 6px 6px 0 0;
-  margin-bottom: 1rem;
+  padding: 0.7rem 1rem;
+  font-size: 1.35rem;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 0.8rem;
   display: flex;
   align-items: center;
 }
 
-/* Weather Icon Control */
+/*  Icon Control */
 .weather-icon {
-  display: inline-block;   /* visible on mobile */
-  vertical-align: middle;
+  display: inline-block;
   margin-left: 8px;
-  width: 28px;
-  height: 28px;
+  width: 26px;
+  height: 26px;
 }
 
-/* Hide emoticon on mobile */
+/* Hide emoji on mobile */
 .weather-card h2::after {
   content: none;
 }
@@ -109,12 +105,12 @@ main img {
 .data-card ul,
 .weather-card ul {
   list-style: none;
-  padding: 0 1.4rem;
+  padding: 0 1.2rem 1.2rem;
 }
 
 .data-card li,
 .weather-card li {
-  margin-bottom: 0.45rem;
+  margin-bottom: 0.4rem;
   font-size: 0.95rem;
 }
 
@@ -136,41 +132,42 @@ footer p {
   margin: 0.25rem 0;
 }
 
-/* Mobile First */
-.data-card {
-  top: 8%;
-  left: 5%;
-}
-
-.weather-card {
-  top: 52%;
-  right: 5%;
-}
-
-/* Desktop */
+/*  Desktop View  */
 @media (min-width: 700px) {
   header h1 {
-    font-size: 3.4rem;
+    font-size: 3.2rem;
   }
 
-  .data-card {
-    top: 15%;
-    left: 6%;
+  main {
+    min-height: 70vh;
+  }
+
+  main img {
+    min-height: 600px;
+  }
+
+  .data-card,
+  .weather-card {
+    position: absolute;
+    margin: 0;
     width: 300px;
   }
 
-  .weather-card {
-    top: 40%;
-    right: 6%;
-    width: 280px;
+  .data-card {
+    top: 12%;
+    left: 5%;
   }
 
-  /* Hide SVG on desktop */
+  .weather-card {
+    top: 38%;
+    right: 5%;
+  }
+
+  /* Hide SVG and shows emoji on desktop */
   .weather-icon {
     display: none;
   }
 
-  /* emoticon only on desktop */
   .weather-card h2::after {
     content: " ⛅";
     font-size: 1.3rem;
