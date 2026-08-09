@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Site plan for 3Core Tech — WDD 131 Website Project. Planning document covering purpose, scenarios, color schema, typography, and wireframes.">
+  <meta name="description" content="Site plan for 3Core Tech — WDD 131 Website Project. Planning document covering purpose, scenarios, color schema, typography, wireframes, page structure, and JavaScript implementation plan.">
   <title>3Core Tech | Site Plan — WDD 131</title>
   <link rel="stylesheet" href="styles/siteplan.css">
 </head>
@@ -20,6 +20,8 @@
           <li><a href="#color-schema">Colors</a></li>
           <li><a href="#typography">Typography</a></li>
           <li><a href="#wireframes">Wireframes</a></li>
+          <li><a href="#structure">Structure</a></li>
+          <li><a href="#javascript">JavaScript</a></li>
         </ul>
       </nav>
     </div>
@@ -30,13 +32,17 @@
     <section class="plan-section" id="site-name">
       <h2>1. Site Name</h2>
       <p><strong>3Core Tech</strong></p>
+      <p class="tagline">Building Intelligent Solutions for Africa.</p>
       <p>
-        The name <span class="highlight">3Core Tech</span> was selected to represent a modern technology company built around several major technology areas. 
+        The name <span class="highlight">3Core Tech</span> was selected to represent a modern technology company built around several major technology areas.
         “3Core” suggests a strong foundational core of expertise, while “Tech” clearly signals the company’s focus on technology solutions.
       </p>
       <p>
-        The name reflects the company’s umbrella approach to Artificial Intelligence, Software Development, Robotics, Solar Technology, and Smart Technology. 
+        The name reflects the company’s umbrella approach to Artificial Intelligence, Software Development, Robotics, Solar Technology, Smart Technology, Business Automation, and GPS &amp; Fleet Technology.
         It is short, memorable, and suitable for a professional technology business based in Nigeria.
+      </p>
+      <p>
+        Official business name registered with the Corporate Affairs Commission: <strong>3CORE TECH</strong> (Registration No. 9706062).
       </p>
       <p class="note">
         Domain concept: 3coretech.ng (availability verified for this student project; no domain has been purchased).
@@ -47,16 +53,16 @@
     <section class="plan-section" id="site-purpose">
       <h2>2. Site Purpose</h2>
       <p>
-        The 3Core Tech website introduces a Nigerian technology company that develops and provides practical technology solutions for individuals and businesses. 
+        The 3Core Tech website introduces a Nigerian technology company that develops and provides practical technology solutions for individuals and businesses.
         Its focus areas include Artificial Intelligence, Software Development, Robotics, Solar Technology, Smart Technology, Business Automation, and GPS &amp; Fleet Technology.
       </p>
       <p>
-        The site serves potential customers such as small business owners, entrepreneurs, organizations, and technology partners. 
+        The site serves potential customers such as small business owners, entrepreneurs, organizations, and technology partners.
         Visitors can learn what 3Core Tech does, explore its major technology areas and planned services, view selected project concepts, understand the company’s vision, and contact the team.
       </p>
       <p>
-        The website is primarily an informational business presence. It is not a full e-commerce platform. 
-        Contact is available via email (<a href="mailto:3core.ng@gmail.com">3core.ng@gmail.com</a>) and a simple contact form.
+        The website is primarily an informational business presence. It is not a full e-commerce platform.
+        Contact is available via email (<a href="mailto:3core.ng@gmail.com">3core.ng@gmail.com</a>), a contact form, and the registered business address in Lagos.
       </p>
       <p>
         In addition to serving real visitors, the site demonstrates skills learned in WDD 131: valid HTML, CSS, responsive design, JavaScript, accessibility, SEO basics, and professional development practices.
@@ -71,15 +77,21 @@
       <h3>Scenario 1</h3>
       <p><strong>What AI and software solutions does 3Core Tech provide for businesses?</strong></p>
       <p>
-        A small business owner or entrepreneur visits the site looking for AI assistants, chatbots, business process automation, custom applications, or related software services. 
+        A small business owner or entrepreneur visits the site looking for AI assistants, chatbots, business process automation, custom applications, or related software services.
         They want a clear overview of the technology areas and service categories offered.
       </p>
 
       <h3>Scenario 2</h3>
       <p><strong>How can I contact 3Core Tech about a technology project?</strong></p>
       <p>
-        A visitor has reviewed the services and project concepts and wants a simple, reliable way to reach the company. 
-        They expect to find an email address and a contact form so they can discuss a potential project.
+        A visitor has reviewed the services and project concepts and wants a simple, reliable way to reach the company.
+        They expect to find an email address, a contact form, and basic company information so they can discuss a potential project.
+      </p>
+
+      <h3>Scenario 3</h3>
+      <p><strong>What technology concepts or initiatives is 3Core Tech exploring?</strong></p>
+      <p>
+        A visitor interested in innovation wants to see examples of the kinds of projects and technology concepts the company is developing or planning, such as AI tools, automation systems, or smart technology solutions.
       </p>
     </section>
 
@@ -87,9 +99,8 @@
     <section class="plan-section" id="color-schema">
       <h2>4. Color Schema</h2>
       <p>
-        The color palette communicates technology, innovation, and professionalism. 
-        Deep navy conveys reliability and engineering strength; electric cyan provides modern energy and highlights interactive elements; 
-        soft off-white keeps content areas clean and readable.
+        The color palette communicates technology, innovation, and professionalism while harmonising with the official 3Core Tech logo (deep blue wordmark with teal, green, and gold geometric mark).
+        Deep navy conveys reliability and engineering strength; electric cyan provides modern energy and highlights interactive elements; soft off-white keeps content areas clean and readable.
       </p>
 
       <div class="color-swatches">
@@ -148,6 +159,7 @@
       </ul>
       <p class="note">
         All combinations were selected for sufficient contrast to support readability and basic accessibility requirements.
+        The official logo (teal/green/gold mark) will be used as provided and will sit naturally against the primary and background colours.
       </p>
     </section>
 
@@ -155,7 +167,7 @@
     <section class="plan-section" id="typography">
       <h2>5. Typography</h2>
       <p>
-        Two modern sans-serif fonts are used to keep the design clean, professional, and highly readable. 
+        Two modern sans-serif fonts are used to keep the design clean, professional, and highly readable.
         No decorative fonts are included.
       </p>
 
@@ -188,7 +200,7 @@
     <section class="plan-section" id="wireframes">
       <h2>6. Wireframes</h2>
       <p>
-        Low-fidelity wireframes for the home page show the placement and relationship of major elements. 
+        Low-fidelity wireframes for the home page show the placement and relationship of major elements.
         They do not contain final content or decorative styling.
       </p>
 
@@ -197,14 +209,14 @@
         <p class="wireframe-label">Mobile View (stacked single column)</p>
         <div class="wireframe wf-mobile">
           <div class="wireframe-box" style="background:#0A1F44;color:#fff;border:none;">Header — Logo + Menu Button</div>
-          <div class="wireframe-box hero">Hero — Headline + Short Intro + Primary CTA</div>
+          <div class="wireframe-box hero">Hero — Logo / Tagline + Short Intro + Primary CTA</div>
           <div class="wireframe-box">Company Introduction</div>
-          <div class="wireframe-box">Service Card 1</div>
-          <div class="wireframe-box">Service Card 2</div>
-          <div class="wireframe-box">Service Card 3</div>
+          <div class="wireframe-box">Service / Technology Card 1</div>
+          <div class="wireframe-box">Service / Technology Card 2</div>
+          <div class="wireframe-box">Service / Technology Card 3</div>
           <div class="wireframe-box accent-box">Featured Project / Concept</div>
           <div class="wireframe-box accent-box">Call-to-Action</div>
-          <div class="wireframe-box">Contact Section (Email + Form)</div>
+          <div class="wireframe-box">Contact Teaser</div>
           <div class="wireframe-box footer-box">Footer</div>
         </div>
       </div>
@@ -222,10 +234,11 @@
               <span>Projects</span>
               <span>Contact</span>
             </div>
+            <!-- References linked from footer only -->
           </div>
-          <div class="wf-hero">Hero Section — Headline, Supporting Text, Primary CTA</div>
+          <div class="wf-hero">Hero Section — Tagline, Supporting Text, Primary CTA</div>
           <div class="wf-two-col">
-            <div class="wireframe-box">Introduction / About</div>
+            <div class="wireframe-box">Introduction / About Teaser</div>
             <div class="wireframe-box">Supporting Visual / Text</div>
           </div>
           <div class="wf-grid">
@@ -235,14 +248,143 @@
           </div>
           <div class="wireframe-box accent-box">Featured Project / Concept Section</div>
           <div class="wireframe-box accent-box">Call-to-Action Band</div>
-          <div class="wireframe-box">Contact Section (Email + Form)</div>
-          <div class="wireframe-box footer-box">Footer — Logo, Copyright, Minimal Links</div>
+          <div class="wireframe-box">Contact Teaser</div>
+          <div class="wireframe-box footer-box">Footer — Logo, Copyright, Email, Nav Links</div>
         </div>
       </div>
 
       <p class="note">
-        The final website will use responsive CSS (Flexbox, Grid, media queries, and relative units) so the same content adapts smoothly from mobile phones to tablets and desktop screens.
+        The final website will use responsive CSS (Flexbox, Grid, media queries, and relative units) so the same content adapts smoothly from mobile phones (portrait and landscape) to tablets and desktop screens.
       </p>
+    </section>
+
+    <!-- ========== 7. Site Structure & Content Plan ========== -->
+    <section class="plan-section" id="structure">
+      <h2>7. Site Structure &amp; Content Plan</h2>
+      <p>The final website will contain six pages with consistent navigation and visual theme.</p>
+
+      <h3>Home — index.html</h3>
+      <ul>
+        <li>Hero with official logo, tagline “Building Intelligent Solutions for Africa.”, short value statement, and primary call-to-action</li>
+        <li>Brief company introduction</li>
+        <li>Technology area cards (AI, Software, Robotics, Solar, Smart Technology, GPS/Fleet)</li>
+        <li>Featured project or concept highlight</li>
+        <li>Secondary call-to-action linking to Contact</li>
+      </ul>
+
+      <h3>About — about.html</h3>
+      <ul>
+        <li>Who 3Core Tech is</li>
+        <li>Mission and vision</li>
+        <li>Technology philosophy</li>
+        <li>Leadership (Powell Nana, Telly Nana and Mclean Nana)</li>
+        <li>Registered business details (name, registration number, Lagos address)</li>
+      </ul>
+
+      <h3>Services — services.html</h3>
+      <ul>
+        <li>Six service categories with clear descriptions</li>
+        <li>Filter controls (All, AI, Software, Robotics, Solar, Smart, GPS)</li>
+        <li>Dynamically generated service cards</li>
+      </ul>
+
+      <h3>Projects — projects.html</h3>
+      <ul>
+        <li>Selected technology concepts and initiatives (clearly presented as concepts, not invented client case studies)</li>
+        <li>Examples may include: AI Business Assistant concept, Business Automation System, Smart Technology solutions, GPS Fleet Tracking concept, Solar technology solutions</li>
+        <li>Dynamic rendering and optional category filtering</li>
+      </ul>
+
+      <h3>Contact — contact.html</h3>
+      <ul>
+        <li>Company email: 3core.ng@gmail.com</li>
+        <li>Registered address: 29, Olatunde Isaac Close, Beckely Estate, Zone 3, Agege, Lagos State, Nigeria</li>
+        <li>Standards-compliant contact form (name, email, subject, message)</li>
+        <li>Client-side validation and user feedback</li>
+      </ul>
+
+      <h3>References — references.html</h3>
+      <ul>
+        <li>Complete list of all external sources used on the website</li>
+        <li>Google Fonts, any icons, images, or other third-party resources</li>
+        <li>Proper attribution for each source</li>
+        <li>Linked from the footer of every page</li>
+      </ul>
+    </section>
+
+    <!-- ========== 8. JavaScript Implementation Plan ========== -->
+    <section class="plan-section" id="javascript">
+      <h2>8. JavaScript Implementation Plan</h2>
+      <p>
+        JavaScript will be used purposefully to meet every WDD 131 requirement while remaining natural to the site.
+        All dynamic strings will be created with template literals. Code will live in an external file (<code>scripts/site.js</code>).
+      </p>
+
+      <h3>Planned Features</h3>
+      <ul>
+        <li><strong>Mobile navigation toggle</strong> — event listener, DOM class manipulation (all pages)</li>
+        <li><strong>Dynamic copyright year</strong> — DOM update in footer (all pages)</li>
+        <li><strong>Services data</strong> — array of objects stored in JavaScript; rendered with <code>map</code> or <code>forEach</code> and template literals</li>
+        <li><strong>Service filtering</strong> — filter buttons use event listeners, <code>filter</code> array method, and conditional logic to show matching cards</li>
+        <li><strong>Projects data</strong> — separate array of objects; dynamically generated cards using template literals and array methods</li>
+        <li><strong>Contact form</strong> — submit event listener, form validation with conditional branching, DOM feedback messages, and meaningful use of <code>localStorage</code> (e.g. remember visitor name/email on return visits or store a short confirmation)</li>
+      </ul>
+
+      <h3>Requirement Coverage</h3>
+      <ul>
+        <li>More than one function</li>
+        <li>DOM element selection and modification</li>
+        <li>Event listeners and event handling</li>
+        <li>Conditional branching</li>
+        <li>Objects and arrays</li>
+        <li>Array methods (<code>map</code>, <code>filter</code>, <code>forEach</code>)</li>
+        <li>Template literals exclusively for output strings</li>
+        <li>localStorage with a practical purpose</li>
+      </ul>
+    </section>
+
+    <!-- ========== Additional Planning Notes ========== -->
+    <section class="plan-section" id="notes">
+      <h2>9. Additional Planning Notes</h2>
+
+      <h3>Responsive Design</h3>
+      <p>
+        Mobile-first CSS using Flexbox and Grid. Layouts will adapt cleanly across mobile portrait, mobile landscape, tablet, and desktop.
+        Navigation collapses to a menu button on small screens.
+      </p>
+
+      <h3>Accessibility</h3>
+      <ul>
+        <li>Semantic HTML5 throughout</li>
+        <li>Proper heading hierarchy</li>
+        <li>Form labels associated with controls</li>
+        <li>Sufficient colour contrast</li>
+        <li>Keyboard-accessible controls and visible focus states</li>
+        <li>Meaningful alternative text for images</li>
+        <li>Clear link and button text</li>
+      </ul>
+
+      <h3>Images</h3>
+      <ul>
+        <li>Official 3Core Tech logo (icon and full versions)</li>
+        <li>All images optimised for web</li>
+        <li>Lazy loading (<code>loading="lazy"</code>) on appropriate images</li>
+        <li>Descriptive <code>alt</code> attributes</li>
+      </ul>
+
+      <h3>References</h3>
+      <ul>
+        <li>A dedicated <code>references.html</code> page lists all external resources (fonts, icons, images, etc.)</li>
+        <li>The References page is linked from the footer of every page on the site</li>
+      </ul>
+
+      <h3>Performance &amp; Professional Practice</h3>
+      <ul>
+        <li>External CSS and JavaScript files</li>
+        <li>No unnecessary libraries or frameworks</li>
+        <li>Valid, clean, original code (no templates or site builders)</li>
+        <li>Hosted in the <code>wdd131</code> GitHub Pages repository inside the <code>project</code> folder</li>
+      </ul>
     </section>
   </main>
 
