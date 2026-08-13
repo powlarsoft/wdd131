@@ -6,11 +6,17 @@ if (navToggle && mainNav) {
     const isOpen = mainNav.classList.toggle('open');
     navToggle.setAttribute('aria-expanded', isOpen);
   });
+  
 }
 
 const yearSpan = document.querySelector('#current-year');
 if (yearSpan) {
   yearSpan.textContent = new Date().getFullYear();
+}
+
+const lastModifiedSpan = document.querySelector('#last-modified');
+if (lastModifiedSpan) {
+  lastModifiedSpan.textContent = document.lastModified;
 }
 
 const services = [
