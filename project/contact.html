@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact 3Core Tech — Reach us by email or contact form. Based in Lagos, Nigeria.">
+  <meta name="author" content="Powell Nana">
+  <title>Contact | 3Core Tech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="images/logo.png" alt="3Core Tech logo" class="logo-img" width="48" height="48">
+        <span class="logo-text">3<span>Core</span> Tech</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p>Let’s discuss how intelligent technology can help your organisation</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-layout">
+        <div class="contact-info">
+          <h2>Get in Touch</h2>
+          <p>We would be glad to hear from you. Reach out using the details below or send us a message using the form.</p>
+          <ul class="contact-details">
+            <li><strong>Email</strong><br><a href="mailto:3core.ng@gmail.com">3core.ng@gmail.com</a></li>
+            <li><strong>Address</strong><br>29, Olatunde Isaac Close, Beckely Estate, Zone 3, Agege, Lagos State, Nigeria</li>
+            <li><strong>Business Name</strong><br>3CORE TECH (Reg. No. 9706062)</li>
+          </ul>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p id="form-feedback" class="form-feedback" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-text">3<span>Core</span> Tech</span>
+        <p>Building Intelligent Solutions for Africa.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+      <div class="footer-contact">
+        <p><a href="mailto:3core.ng@gmail.com">3core.ng@gmail.com</a></p>
+        <p>Lagos, Nigeria</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year"></span> 3Core Tech. All rights reserved.</p>
+      <p class="student-note">Student Project — Powell Nana | WDD 131</p>
+    </div>
+  </footer>
+  <script src="scripts/site.js"></script>
+</body>
+</html>
